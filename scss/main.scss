@@ -1,0 +1,21 @@
+@import './utils/_variables';
+@import './utils/_placeholders';
+
+@import './base/_common';
+@import './base/_reset';
+
+@import './components/_title';
+@import './components/_section';
+@import './components/_container';
+
+@import './modal/_menu';
+@import './modal/_modal';
+
+@import './layouts/_header';
+@import './layouts/_services';
+@import './layouts/_description';
+@import './layouts/_gallery';
+@import './layouts/_team';
+@import './layouts/_group';
+@import './layouts/_product';
+@import './layouts/_footer';

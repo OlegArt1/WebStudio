@@ -1,0 +1,163 @@
+/* ==========SERVICES========== */
+.services
+{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/pictare-fon.jpg);    
+}
+.services-title
+{
+    max-width: 696px;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+.services-btn
+{
+    width: 216px;
+    height: 50px;
+    margin: 30px auto 0;
+    display: block;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: var(--main-brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--main-brand-color);
+    border-radius: 4px;
+}
+    .services-btn:focus
+    {
+        border: 1px solid var(--main-focus-color);
+    }
+.services-modal-wrapper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.services-modal-button
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--services-border-modal-color-1);
+    background-color: transparent;
+}
+    .services-modal-button:hover
+    {
+        border: 1px solid var(--main-brand-color);
+        fill: var(--main-brand-color);
+    }
+.services-modal-form-title
+{
+    max-width: 448px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+}
+.services-modal-form-label
+{
+    color: var(--gray-color);
+}
+.services-modal-form-icon
+{
+    margin-right: 12px;
+}
+.services-modal-form-text
+{
+    width: 448px;
+    height: 40px;
+    padding: 12px 16px;
+    border-radius: 4px;    
+    border: 1px solid var(--services-border-modal-color-2);
+    color: var(--services--text-modal-color);
+}
+    .services-modal-form-text:hover
+    {
+        border: 1px solid var(--main-brand-color);
+    }
+.services-modal-checkbox-block
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-modal-checkbox
+{
+    margin-right: 7px;
+}
+.services-modal-checkbox-text
+{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--gray-color);
+}
+.services-modal-button-send
+{
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0;
+    display: block;
+    border-radius: 4px;
+    background-color: var(--main-brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.services-modal-button-text
+{
+    padding: 10px 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;    
+    color: var(--white-color);
+}
+.services-backdrop
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--services-fon-modal-color);
+}
+.services-backdrop.is-hidden
+{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+/* ===== ===== */

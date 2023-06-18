@@ -1,0 +1,66 @@
+.services
+{
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/pictare-fon.jpg);
+    @media (min-width: 1200px)
+    {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    @media (max-width: 1200px)
+    {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+}
+.services__title
+{
+    margin: 0 auto;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    @media (min-width: 1200px)
+    {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
+    @media (max-width: 1200px)
+    {
+        max-width: 360px;
+        font-size: 26px;
+        line-height: 1.62;
+    }
+}
+.services__button
+{
+    margin: 30px auto 0;
+    display: block;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid var(--main-focus-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-image: radial-gradient(circle at center, var(--main-active-color) 15%, var(--main-brand-color) 55%, var(--main-focus-color));
+    color: var(--white-color);
+    @media (min-width: 1200px)
+    {
+        width: 216px;
+        height: 50px;
+        font-size: 16px;
+    }
+    @media (max-width: 1200px)
+    {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
+}

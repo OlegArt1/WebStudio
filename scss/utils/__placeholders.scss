@@ -1,0 +1,24 @@
+/* ==========PLACEHOLDERs========== */
+%list
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%list-justify
+{
+    display: flex;
+    justify-content: center;
+}
+%list-align
+{
+    display: flex;
+    align-items: center;
+}
+%menu-active
+{
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+}
+/* ===== ===== */

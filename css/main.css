@@ -1,0 +1,90 @@
+:root
+{
+    --footer-border-contact-color: rgba(255, 255, 255, 0.3);
+    --gallery-border-item-color: rgba(47, 48, 58, 0.8);
+    --services-border-modal-color-1: rgba(0, 0, 0, 0.1);
+    --services-border-modal-color-2: rgba(33, 33, 33, 0.2);
+    --services-text-modal-color: rgba(117, 117, 117, 0.5);
+    --services-fon-modal-color: rgba(0, 0, 0, 0.3);
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --main-brand-color: rgb(33, 150, 243);
+    --main-focus-color: rgb(79, 33, 243);
+    --header-border-bottom-color: #ECECEC;
+    --product-border-white-color: #EEEEEE;
+    --footer-fon-black-color: #2F303A;
+    --fill-social-icon-color: #AFB1B8;
+    --fon-social-icon-color: #44454E;
+    --fon-light-gray-color: #F5F4FA;
+    --white-color: #FFFFFF;    
+    --black-color: #212121;
+    --gray-color: #757575;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+p, h1, h2, h3, h4, h5, h6
+{
+    margin: 0;
+}
+ul, ol
+{
+    margin: 0;
+    padding-left: 0;
+}
+button
+{
+    cursor: pointer;
+}
+address
+{
+    font-style: normal;
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+*
+{
+    box-sizing: border-box;
+}
+.list
+{
+    list-style: none;
+}
+.link
+{
+    text-decoration: none;
+}
+.logotype-color-text
+{
+    color: var(--main-brand-color);
+}
+.section
+{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.container
+{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.title
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;    
+}
+.modal-text-form
+{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}

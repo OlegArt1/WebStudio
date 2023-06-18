@@ -1,0 +1,123 @@
+.group__title
+{
+    color: var(--black-color);
+}
+.group__list
+{
+    @extend %list;
+    gap: 30px;
+    @media (min-width: 1200px)
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 768px) and (max-width: 1200px)
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 480px) and (max-width: 768px)
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 480px)
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+.group__item
+{
+    height: 92px;
+    @media (min-width: 1200px)
+    {
+        width: 170px;
+    }
+    @media (min-width: 768px) and (max-width: 1200px)
+    {
+        width: 226px;
+    }
+    @media (min-width: 480px) and (max-width: 768px)
+    {
+        width: 210px;
+    }
+    @media (max-width: 480px)
+    {
+        width: 100%;
+    }
+}
+.group__link
+{
+    height: 92px;
+    @extend %list;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    border: 1px solid var(--social-icon-color);
+    fill: var(--social-icon-color);
+    border-radius: 4px;
+    &:hover
+    {
+        border-color: var(--main-brand-color);
+    }
+    &:focus
+    {
+        border-color: var(--main-focus-color);
+    }
+    @media (min-width: 1200px)
+    {
+        &:hover
+        {
+            transform: skewY(-10deg);
+        }
+        &:focus {
+            transform: skewY(10deg);
+        }
+    }
+    @media (max-width: 1200px)
+    {
+        &:hover
+        {
+            transform: skewY(-7deg);
+        }
+        &:focus
+        {
+            transform: skewY(7deg);
+        }
+    }
+    @media (max-width: 768px)
+    {
+        &:hover
+        {
+            transform: skewY(-5deg);
+        }
+        &:focus
+        {
+            transform: skewY(5deg);
+        }
+    }
+    @media (max-width: 480px)
+    {
+        &:hover
+        {
+            transform: skewY(-2deg);
+        }
+        &:focus
+        {
+            transform: skewY(2deg);
+        }
+    }
+}
+.group__social-icon
+{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    .group__link:hover &
+    {
+        fill: var(--main-brand-color);
+    }
+    .group__link:focus &
+    {
+        fill: var(--main-focus-color);
+    }
+}

@@ -1,0 +1,158 @@
+.backdrop-menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.backdrop-menu.is-hidden-menu
+{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.menu__wrapper
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    text-align: left;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--white-color);
+}
+.menu__button-close
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    @extend %list;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    &:hover
+    {
+        border: 1px solid var(--white-color);
+    }
+}
+.menu__icon-close
+{
+    fill: var(--modal-close-color);
+    &:hover
+    {
+        fill: var(--main-brand-color);
+    }
+}
+.menu__wrapper-block
+{
+    padding-left: 0;
+}
+.menu__list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.menu__link
+{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--black-color);
+    &:hover
+    {
+        color: var(--main-brand-color);
+    }
+    @media (max-width: 480px)
+    {
+        font-size: 30px;
+        line-height: 1.57;
+    }
+}
+.menu__connect
+{
+    margin-top: 55%;
+    @media (max-width: 480px)
+    {
+        margin-top: 150px;
+    }
+}
+.menu__contact-list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.menu__contact-telephone
+{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--main-brand-color);
+    &:hover, &:focus
+    {
+        color: var(--black-color);
+    }
+    @media (max-width: 480px)
+    {
+        font-size: 25px;
+        line-height: 1.6;
+    }
+}
+.menu__contact-email
+{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--gray-color);
+    &:hover, &:focus
+    {
+        color: var(--black-color);
+    }
+    @media (max-width: 480px)
+    {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+.menu__social
+{
+    margin-top: 64px;
+}
+.menu__social-list
+{
+    @extend %list-align;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.menu__social-text
+{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--main-brand-color);
+    &:hover, &:focus
+    {
+        color: var(--red-color);
+    }
+    @media (max-width: 480px)
+    {
+        font-size: 12px;
+        line-height: 1.83;
+    }
+}
+.menu__social-icon
+{
+    color: var(--menu-social-icon-color);
+}

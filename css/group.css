@@ -1,0 +1,50 @@
+/* ==========GROUP========== */
+/* .group {} */
+.group-title
+{
+    margin-bottom: 50px;
+    color: var(--black-color);
+}
+.group-list
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+}
+.group-item
+{
+    width: 170px;
+    height: 92px;
+}
+.group-link
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--fill-social-icon-color);
+    border-radius: 4px;
+}
+.group-social-icon
+{
+    fill: var(--fill-social-icon-color);
+}
+    .group-link:hover
+    {
+        border-color: var(--main-brand-color);
+    }
+    .group-link:focus
+    {
+        border-color: var(--main-focus-color);
+    }
+    .group-link:hover .group-social-icon
+    {
+        fill: var(--main-brand-color);
+    }
+    .group-link:focus .group-social-icon
+    {
+        fill: var(--main-focus-color);
+    }
+/* ===== ===== */
